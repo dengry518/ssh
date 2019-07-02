@@ -1,7 +1,8 @@
 new Vue({
     el: '#app',
     data: {
-        userList: []
+        userList: [],
+        user: {}
     },
     methods: {
         getUserList: function () {
@@ -9,6 +10,15 @@ new Vue({
             axios.get("/user/list.do")
                 .then(function (response) {
                     _this.userList = response.data;
+                })
+        },
+        edit: function (id) {
+            $('#myModal').modal('show');
+
+            var _this = this;
+            axios.get("/user/" + id + ".do")
+                .then(function (response) {
+                    _this.user = response.data;
                 })
         }
     },
