@@ -15,7 +15,7 @@
         <jstl.version>1.2</jstl.version>
         <spring.version>5.1.8.RELEASE</spring.version>
         <logback.version>1.2.3</logback.version>
-        <mysql.version>5.1.47</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
         <aspectjweaver.version>1.9.4</aspectjweaver.version>
         <tomcat-jdbc.version>8.0.20</tomcat-jdbc.version>
         <spring-data-jpa.version>2.1.9.RELEASE</spring-data-jpa.version>
